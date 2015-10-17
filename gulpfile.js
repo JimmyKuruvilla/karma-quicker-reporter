@@ -4,11 +4,14 @@ var Server = require('karma').Server;
 /**
  * Run test once and exit
  */
-gulp.task('test', function (done) {
-  new Server({
+
+gulp.task('test', function(done) {
+  new Server.start({
     configFile: __dirname + '/karma.conf.js',
     singleRun: true
-  }, done).start();
+  }, function() {
+    done();
+  });
 });
 
 /**
