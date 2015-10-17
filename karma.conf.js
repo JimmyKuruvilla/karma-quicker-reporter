@@ -10,7 +10,7 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'test/**/*.js'
+      'test/karmaQuickerSpec.js'
     ],
 
     // web server port
@@ -22,20 +22,13 @@ module.exports = function (config) {
 
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: true,
-
-    //reporters: ['progress'],
+    quickerConfig: {
+      quickQuit: false
+    },
     reporters: ['quicker'],
+    //reporters: ['progress', 'quicker'],
 
-    plugins: [
-      // Karma will require() these plugins
-      'karma-jasmine',
-      'karma-chrome-launcher',
-      'karma-quicker-reporter'
 
-      // inlined plugins
-      //{'framework:xyz': ['factory', factoryFn]},
-      //require('./plugin-required-from-config')
-    ],
     // Start these browsers, currently available:
     // - Chrome
     // - ChromeCanary
