@@ -19,8 +19,7 @@ var QuickerReporter = function (baseReporterDecorator, config, logger, helper, f
   var punctuationRe = /[:,\.\n]*$/g; //strip only some chars from end
 
   baseReporterDecorator(self);
-
-  var theme = {
+  var theme = quickerConfig.theme || {
     expectedVar: 'yellow',
     butString: 'yellow',
     actualVar: 'blue',
