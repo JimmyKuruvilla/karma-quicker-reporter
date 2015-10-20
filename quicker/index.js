@@ -14,7 +14,7 @@ var QuickerReporter = function (baseReporterDecorator, config, logger, helper, f
 
   baseReporterDecorator(self);
 
-  var theme = config.quickerConfig.theme || {
+  var theme = quickerConfig.theme || {
     expectedVar: 'yellow',
     butString: 'yellow',
     actualVar: 'blue',
