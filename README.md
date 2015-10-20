@@ -10,9 +10,19 @@ A easier to read more flexible reporter plugin for Karma for use with Jasmine.
 6. Should still produce a normal Karma error even if everything else breaks. 
 7. Should work in gulp and grunt task runners.
 8. Should work in karma-jasmine 0.1.5. 
+9. Should work with karma-jasmine 0.3.6+.
 
 #####In Progress Goals:
-9. Should work with karma-jasmine 0.3.6+.
+10. Theme overrides on variable by variable basis. 
+
+#####Jasmine V1
+```
+npm install karma-quicker-reporter-jasminev1
+```
+#####Jasmine V2
+```
+npm install karma-quicker-reporter-jasminev2
+```
 
 #####Add this to karma.conj.js:
 ```
