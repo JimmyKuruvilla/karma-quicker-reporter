@@ -1,6 +1,6 @@
 {
   "name": "karma-quicker-reporter-jasminev1",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "make karma-jasmine output friendlier",
   "main": "index.js",
   "dependencies": {
