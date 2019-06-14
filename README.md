@@ -1,7 +1,7 @@
 # karma-quicker-reporter
 A easier to read more flexible reporter plugin for Karma for use with Jasmine. 
 
-#####Completed Goals:
+##### Completed Goals:
 1. Useful information should be colorized 
 2. Unnecessary information should be removed
 3. When relevant, useful info should be diffed to highlight differences
@@ -12,19 +12,19 @@ A easier to read more flexible reporter plugin for Karma for use with Jasmine.
 8. Should work in karma-jasmine 0.1.5. 
 9. Should work with karma-jasmine 0.3.6+.
 
-#####In Progress Goals:
+##### In Progress Goals:
 10. Theme overrides on variable by variable basis. 
 
-#####Jasmine V1
+##### Jasmine V1
 ```
 npm install karma-quicker-reporter-jasminev1
 ```
-#####Jasmine V2
+##### Jasmine V2
 ```
 npm install karma-quicker-reporter-jasminev2
 ```
 
-#####Add this to karma.conj.js:
+##### Add this to karma.conj.js:
 ```
 quickerConfig: {
       quickQuit: false //true to only show the first error
@@ -35,7 +35,7 @@ quickerConfig: {
 reporters: ['quicker']
 ```
     
-######Turns this:
+###### Turns this:
 ![](https://github.com/JimmyKuruvilla/karma-quicker-reporter/blob/master/test/old.png)
-######Into this:
+###### Into this:
 ![](https://github.com/JimmyKuruvilla/karma-quicker-reporter/blob/master/test/new.png)
